@@ -5,12 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dynamyc010.github.io</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            color: white;
+            background: linear-gradient(270deg, #2d0b33, #78206c, #840454);
+            background-size: 600% 600%;
+
+            -webkit-animation: mainpageanim 30s ease infinite;
+            -moz-animation: mainpageanim 30s ease infinite;
+            animation: mainpageanim 30s ease infinite;
+        }
+
+        @-webkit-keyframes mainpageanim {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes mainpageanim {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes mainpageanim {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        html, body, .container, .container-fluid {
+        height: 100%;
+        }
+        #mainpage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a, a:visited, a:hover{
+            color:#f12c91;
+        }
+    </style>
 </head>
 <body>
-<div class="container-fluid">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis repellat unde excepturi, nisi dolorum laboriosam quae expedita nam error quaerat id dignissimos iure ab voluptatibus. Veniam molestiae illum voluptatem.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt, impedit praesentium ullam velit, illum eligendi sint odit maiores nesciunt vitae dolorem, porro vero et incidunt enim minus voluptatibus ad.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga soluta illo consequuntur quasi delectus rerum praesentium, officiis, suscipit maiores, ratione sunt pariatur quis aut quod enim reprehenderit facilis saepe rem!
+<div class="container" id="mainpage">
+<h1>Heya! I'm dynamyc. You can find more info about me <a href="https://google.com">here</a>!</h1>
 </div>
+
+
+<!--JS used for bootstrap - maybe not needed?-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
