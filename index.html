@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.png">
+
 </head>
 <body>
 <!-- Welcoming Page -->
@@ -19,18 +20,6 @@
 
 <!-- About Page -->
 <div class="container" id="about">
-<br> <!-- I couldn't be bothered to fuck around with margins, so yeah. -->
-<br> <!-- Blame margins -->
-<br> <!-- smh nightmargin -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <h2>So, you already know my nickname. And since you got here,</h2>
 <h4>some notable things I <i>might</i> be known for:</h4>
 <ul>
@@ -44,26 +33,10 @@
 <h5>I don't know why, I don't know what to do. This website was fun to make, but I'm usually not this... you know, up for coding.</h5>
 <h5>I currently live in hungary, and while I don't like it that much, I don't hate it either.</h5>
 <h5>Please, if you feel like I could be a <i>(possibly)</i> good friend, add me on Discord. You can find it <a href="#accounts">here</a>.</h5>
-<br>
-<br>
-<br>
-<br>
 </div>
 
 <!-- Accounts Page -->
 <div class="container" id="accounts">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <h1>These are my accounts. If you wanna talk, I suggest Discord, since I use that the most, but Steam might also work.</h1>
 <h6>(Though on Steam, <b>please</b> tell me why you add me. I don't like a cluttered Friends list.)</h6>
 <ul>
@@ -82,13 +55,24 @@
 <h1>This website is made possible by GitHub!</h1>
 <h6>You can find the <del>spaghetti</del> code that makes this website possible <a href="https://github.com/dynamyc010/dynamyc010.github.io" target="_blank">here</a>!</h6>
 <h6>(Please don't look at it.)</h6>
-<br>
-
 </div>
 
-<!--JS used for bootstrap - maybe not needed?-->
+<!-- JS from now on here -->
+<!-- JS used for bootstrap - maybe not needed? -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Animation for links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    // Bind all a href clicks to this function
+    $(document).on('click', 'a', function(event){
+
+    // Animate the body (html page) to scroll to the referring element 
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 250
+    }, 1000);
+});
+</script>
 </body>
 </html>
