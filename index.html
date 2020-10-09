@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dynamyc010.github.io</title>
+    <title>If you see this, please contact me.</title>
     <meta name="description" content="dyn's site he put together during some random lessons, cuz why the heck not. you can find some info about me on here.">
     <meta name="theme-color" content="#f12c91">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.png">
-
 </head>
-<body>
+<body onload="changeTitle()">
 <!-- Welcoming Page -->
 <div class="container" id="mainpage">
 <h1>Heya! I'm dynamyc. You can find more info about me <a href="#about">here</a>!</h1>
@@ -64,15 +63,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- Animation for links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-    // Bind all a href clicks to this function
-    $(document).on('click', 'a', function(event){
-
-    // Animate the body (html page) to scroll to the referring element 
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 250
-    }, 1000);
-});
-</script>
+<script src="js/bindhref.js"></script>
+<!-- Script for changing title, cuz of the other domain lol -->
+<script src="js/changetitle.js"></script>
 </body>
 </html>
