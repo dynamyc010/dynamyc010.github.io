@@ -6,6 +6,8 @@ body{
     -webkit-animation: mainpageanim 30s ease infinite;
     -moz-animation: mainpageanim 30s ease infinite;
     animation: mainpageanim 30s ease infinite;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 @-webkit-keyframes mainpageanim {
@@ -23,9 +25,11 @@ body{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
 html, body, .container, .container-fluid {
 height: 100%;
 }
+
 #mainpage {
     display: flex;
     align-items: center;
