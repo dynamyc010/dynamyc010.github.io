@@ -17,7 +17,11 @@ var randomTitle = `{
         "Follow me on Tweeter lol",
         "Who dares enter my dungeon?",
         "hewwo owo",
-        "brb, yeeting myself out of existence"
+        "brb, yeeting myself out of existence",
+        "meow",
+        "how do you do fellow kids",
+        "what is life",
+        "The Council of Niko is a nice place, not gonna lie."
     ]
 }`
 let onloadStrings = JSON.parse(randomTitle).randomTitles;
@@ -25,6 +29,6 @@ let onloadStrings = JSON.parse(randomTitle).randomTitles;
 function changeTitle()
 {
     let genNumber = Math.floor(Math.random()*onloadStrings.length);
-    document.title = weblocation + " | " +onloadStrings[genNumber];
+    document.title = weblocation + " | " + onloadStrings[genNumber];
 }
 
