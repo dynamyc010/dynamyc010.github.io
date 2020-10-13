@@ -1,0 +1,4 @@
+function loadMainPage(){
+    changeTitle();
+    mainPageRedirect();
+}

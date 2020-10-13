@@ -3,9 +3,16 @@
 function redirectIfDirect(){
 if(window.location.href == "https://dynamyc.me/404.html")
     {
-        window.location.href = "https://dynamyc.me/cheatersjail.html"
+        window.location.href = "https://dynamyc.me/cheatersjail.html";
     }
 else{
-    console.log("The website you tried to access (" + window.location.href + ") does not exist. If you have questions about this, contact me.")
+    console.log("The website you tried to access (" + window.location.href + ") does not exist. If you have questions about this, contact me.");
+    }
+}
+
+function mainPageRedirect(){
+    if(window.location.href == "https://dynamyc.me/index.html")
+    {
+        windows.location.href = "https://dynamyc.me/";
     }
 }
