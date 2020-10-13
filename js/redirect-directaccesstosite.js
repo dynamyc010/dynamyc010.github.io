@@ -13,6 +13,6 @@ else{
 function mainPageRedirect(){
     if(window.location.href == "https://dynamyc.me/index.html")
     {
-        windows.location.href = "https://dynamyc.me/";
+        window.location.href = "https://dynamyc.me/";
     }
 }
