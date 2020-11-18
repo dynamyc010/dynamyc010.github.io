@@ -32,6 +32,13 @@ html, body, .container, .container-fluid {
 height: 100%;
 }
 
+.full-height{
+    height:100%
+}
+.seperator{
+    height:100%;
+}
+
 #mainpage {
     display: flex;
     align-items: center;
@@ -43,9 +50,8 @@ a, a:visited, a:hover{
 
 #about{
     align-items: center;
-    height: 1000px;
+    height: fit-content;
     list-style-type: square;
-    padding: 20px;
 }
 
 #about ul, #accounts ul{
@@ -54,15 +60,12 @@ a, a:visited, a:hover{
 }
 
 #accounts{
-    height: 1000px;
 }
 
 #bottombar{
     background-color: #000000;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    height: fit-content;
+    height:min-content;
     border-top: solid 15px #000000;
     border-bottom: solid 5px #000000;
 }
