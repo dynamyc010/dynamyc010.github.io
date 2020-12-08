@@ -1,6 +1,6 @@
-var weblocation = window.location.hostname;
+const weblocation = window.location.hostname;
 
-var titleJSON = `{
+const titleJSON = `{
     "titles" : 
     [ 
         "Welcome to dyn's very own web location!",
@@ -22,10 +22,14 @@ var titleJSON = `{
         "how do you do fellow kids",
         "what is life",
         "The Council of Niko is a nice place, not gonna lie.",
-        "red kinda sus ngl"
+        "red kinda sus ngl",
+        "Amber is pretty cute",
+        ">w<",
+        "hehe",
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     ]
 }`
-let onloadStrings = JSON.parse(titleJSON).titles;
+const onloadStrings = JSON.parse(titleJSON).titles;
 
 function changeTitle()
 {
