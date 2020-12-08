@@ -1,7 +1,7 @@
 var weblocation = window.location.hostname;
 
-var randomTitle = `{
-    "randomTitles" : 
+var titleJSON = `{
+    "titles" : 
     [ 
         "Welcome to dyn's very own web location!",
         "How are ya?",
@@ -21,10 +21,11 @@ var randomTitle = `{
         "meow",
         "how do you do fellow kids",
         "what is life",
-        "The Council of Niko is a nice place, not gonna lie."
+        "The Council of Niko is a nice place, not gonna lie.",
+        "red kinda sus ngl"
     ]
 }`
-let onloadStrings = JSON.parse(randomTitle).randomTitles;
+let onloadStrings = JSON.parse(titleJSON).titles;
 
 function changeTitle()
 {
