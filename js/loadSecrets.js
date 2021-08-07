@@ -10,6 +10,7 @@ function weLostOurSanity()
         document.body.appendChild(ifreem);
 
         $('html, body').animate({ scrollTop: 0 }, 'fast');
+        alert("This thing is pretty... unfinished. Don't dm me about it, I'll likely won't finish it.")
     }
     else{
         switch(isTerminalOpen){
@@ -53,7 +54,7 @@ function weLostOurSanity()
                 setTimeout(() => {alert("There. Happy? \n\nYou will only be able to see a single terminal but you can inspect element to see you indeed have 2!"); }, 600);
                 break;
             case 14:
-                alert("I'm fucking done with you.")
+                alert("I'm done with you.")
                 open(location, '_self').close();
                 break;
 

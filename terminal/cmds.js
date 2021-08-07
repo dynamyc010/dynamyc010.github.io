@@ -7,27 +7,18 @@
 
 // God help me.
 
-let ip = "0.0.0.0";
+let ip = "127.0.0.1";
 let note = "\n";
 let ipcolor = "#22b352"
 
 $(document).ready(function () {
-    $.getJSON("https://geo.ipify.org/api/v1?apiKey=at_Dxpfkozoqs8jWbKBjvdJP7UIsBaCO", function (data) {
-        ip = data.ip;
-    });
-    setTimeout(function(){
-    if(ip == "0.0.0.0"){
-        ip = "unknown"
-        note = "\n\n[[;#FF0000;;](!!!)] Your IP is currently unavailable. More info in devtools."
-        console.log("An ad-blocker (probably) blocked our request to ipify, or ipify just timed out lol. \nYou probably won't miss out on much.")
-        ipcolor = "#FF0000"
-    }}, 700);
+    // Code to run on ready
 });
 
 setTimeout(function(){
 $('body').terminal({
     testcommand: function() {
-        this.echo("owo");
+        this.echo("owo life is painful right now");
     },
     wiki: function(command){
         if(command != null){
@@ -54,7 +45,7 @@ $('body').terminal({
     + "  |_| |_|_|___|_____|___|_| |_|___|_|_|_|__,|___|_|_|_|_|_|___|\n"
     + "                                                               \n"
     + "[[@;;;;./assets/PC_on.png]] \n\n"
-    + "Version: 2 \n"
+    + "Version: 0 \n"
     + "Current session: [[;#22b352;;]guest]@[[;" + ipcolor + ";;]" + ip + "]"
 
     
@@ -68,7 +59,7 @@ $('body').terminal({
     + "  |_| |_|_|___|_____|___|_| |_|___|_|_|_|__,|___|_|_|_|_|_|___|\n"
     + "                                                               \n"
     + "[[@;;;;./assets/PC_on.png]]"
-    + "Last login: [[;#FF0000;;]unknown] from [[;"+ ipcolor +";;]" + ip + "]\n"
+    + "Last login: [[;" + ipcolor + ";;]" + moment().format("ddd MMM  D HH:mm:ss YYYY") + "] from [[;"+ ipcolor +";;]" + ip + "]\n"
     + "Welcome to The World Machine!" + note + "\n",
     prompt: "guest@dynamyc.me:~$ "
     
