@@ -23,7 +23,6 @@ const titleJSON = `{
         "what is life",
         "The Council of Niko is a nice place, not gonna lie.",
         "red kinda sus ngl",
-        "Amber is pretty cute",
         ">w<",
         "hehe",
         "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
