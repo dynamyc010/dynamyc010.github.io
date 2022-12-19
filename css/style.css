@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 body{
+    color: white;
+    
     background: linear-gradient(270deg, #2d0b33, #350a36, #3d0a39, #45093c, #4d083f, #550842, #5c0745, #640748, #6c064b, #74054e, #7c0551, #840454);
     background-size: 2400% 2400%;
 
-    -webkit-animation: mainpageanim 25s ease infinite;
-    -moz-animation: mainpageanim 25s ease infinite;
-    animation: mainpageanim 25s ease infinite;
+    -webkit-animation: mainpageanim 30s ease infinite;
+    -moz-animation: mainpageanim 30s ease infinite;
+    animation: mainpageanim 30s ease infinite;
+    
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 @-webkit-keyframes mainpageanim {
