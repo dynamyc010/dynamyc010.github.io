@@ -1,4 +1,7 @@
 function loadMainPage(){
     changeTitle();
-    mainPageRedirect();
+    if(window.location.href == "https://dynamyc.me/index.html")
+    {
+        window.location.href = "https://dynamyc.me/";
+    }
 }
